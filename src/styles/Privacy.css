@@ -1,0 +1,25 @@
+.privacy-page {
+    background-color: white;
+    min-height: calc(100vh - 97px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .privacy-content {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .privacy-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .privacy-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }

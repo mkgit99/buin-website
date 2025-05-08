@@ -1,0 +1,131 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1200; /* raise above mobile menu */
+
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-logo img {
+  height: 60px;
+  z-index: 1201;
+}
+
+.navbar-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  transition: transform 0.3s ease;
+  z-index: 1201;
+}
+
+.navbar-toggle.open {
+  transform: rotate(90deg);
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* underline animation for navbar links */
+.navbar-menu li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 4px;
+  color: inherit;
+}
+
+.navbar-menu li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(155deg, rgba(179,22,53,1), rgba(49,43,106,1));
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-menu li a:hover::after {
+  width: 100%;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+/* responsive full-screen mobile menu fix */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 80vw;
+    height: 100vh;
+    background: white;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    margin: 0;
+    transition: left 0.4s ease-in-out;
+    z-index: 1100;
+    list-style: none;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.58);
+  }
+
+  .navbar-menu.slide-in {
+    left: 0;
+    padding: 0;
+  }
+
+  .navbar-menu li a {
+    font-size: 1.5rem;
+    z-index: 1201;
+    margin-left: 2rem;
+  }
+
+  .navbar-backdrop {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin-top: 2rem;
+  }
+
+  .mobile-logo.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .mobile-logo-img {
+    height: 90px;
+    width: auto;
+    max-width: 80%;
+  }
+}

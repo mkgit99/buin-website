@@ -1,25 +1,51 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
+import About from './pages/About';
+import Articles from './pages/Articles';
+import Services from './pages/Services';
+import Navbar from './components/Navbar';
 import './App.css';
+import './styles/animations.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function ScrollRevealHandler() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const reveal = () => {
+      document.querySelectorAll('[data-animate]').forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        const visible = rect.top < window.innerHeight - 50;
+        if (visible) el.classList.add('visible');
+      });
+    };
+
+    // Run reveal immediately on route change (first visible items)
+    reveal();
+
+    // Also run on scroll for additional content
+    window.addEventListener('scroll', reveal);
+    return () => window.removeEventListener('scroll', reveal);
+  }, [location.pathname]);
+
+  return null;
 }
 
-export default App;
+export default function App() {
+  return (
+    <Router>
+      <ScrollRevealHandler />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/articles" element={<Articles />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
+      </Routes>
+    </Router>
+  );
+}
