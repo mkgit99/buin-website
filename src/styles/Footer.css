@@ -1,0 +1,39 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    position: relative;
+  }
+  
+  .footer-border {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(155deg, rgba(179,22,53,1) 0%, rgba(49,43,106,1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer-privacy {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-privacy:hover {
+    color: white;
+  }
+  
+  .footer-right {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #aaa;
+  }
