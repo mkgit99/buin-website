@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="home-page">
       <header className="hero-section">
-        <h1 className="hero-heading">Cześć, witam na stronce</h1>
+        <h1 className="hero-heading">Passion for Lead Generation</h1>
         <p className="hero-subtext">Robie to to i to i tamto</p>
         <button className="hero-button" onClick={handleGoToServices}>Sprawdź moje kursy</button>
       </header>
