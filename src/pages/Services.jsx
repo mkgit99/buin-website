@@ -12,29 +12,14 @@ export default function Services() {
   return (
     <div className='page-container'>
       <div className="page">
-        <h1 className="animated-title">Rodzaje usług</h1>
+        <h1 className="animated-title">Usługi</h1>
         <ul className="services-list">
-          <li data-animate><strong>Konsultacje marketingowe</strong> – analiza i strategia Twojej marki.</li>
-          <li data-animate><strong>Szkolenia i warsztaty</strong> – rozwój kompetencji zespołu.</li>
-          <li data-animate><strong>Tworzenie kampanii</strong> – od pomysłu po realizację i analizę.</li>
-          <li data-animate><strong>Konsultacje marketingowe</strong> – analiza i strategia Twojej marki.</li>
-          <li data-animate><strong>Szkolenia i warsztaty</strong> – rozwój kompetencji zespołu.</li>
-          <li data-animate><strong>Konsultacje marketingowe</strong> – analiza i strategia Twojej marki.</li>
-          <li data-animate><strong>Szkolenia i warsztaty</strong> – rozwój kompetencji zespołu.</li>
-          <li data-animate><strong>Konsultacje marketingowe</strong> – analiza i strategia Twojej marki.</li>
-          <li data-animate><strong>Szkolenia i warsztaty</strong> – rozwój kompetencji zespołu.</li>
-          <li data-animate><strong>Tworzenie kampanii</strong> – od pomysłu po realizację i analizę.</li>
-          <li data-animate><strong>Konsultacje marketingowe</strong> – analiza i strategia Twojej marki.</li>
-          <li data-animate><strong>Szkolenia i warsztaty</strong> – rozwój kompetencji zespołu.</li>
-          <li data-animate><strong>Konsultacje marketingowe</strong> – analiza i strategia Twojej marki.</li>
-          <li data-animate><strong>Szkolenia i warsztaty</strong> – rozwój kompetencji zespołu.</li>
-          <li data-animate><strong>Konsultacje marketingowe</strong> – analiza i strategia Twojej marki.</li>
-          <li data-animate><strong>Szkolenia i warsztaty</strong> – rozwój kompetencji zespołu.</li>
-          <li data-animate><strong>Tworzenie kampanii</strong> – od pomysłu po realizację i analizę.</li>
-          <li data-animate><strong>Konsultacje marketingowe</strong> – analiza i strategia Twojej marki.</li>
-          <li data-animate><strong>Szkolenia i warsztaty</strong> – rozwój kompetencji zespołu.</li>
-          <li data-animate><strong>Konsultacje marketingowe</strong> – analiza i strategia Twojej marki.</li>
-          <li data-animate><strong>Szkolenia i warsztaty</strong> – rozwój kompetencji zespołu.</li>
+          <li data-animate><strong>Konsultacje cold callingowe</strong> – analiza i strategia Twojej marki.</li>
+          <li data-animate><strong>Warsztaty cold callingowe</strong> – rozwój kompetencji zespołu.</li>
+          <li data-animate><strong>Konsultacje networkingowe</strong> – od pomysłu po realizację i analizę.</li>
+          <li data-animate><strong>Warsztaty networkingowe</strong> – analiza i strategia Twojej marki.</li>
+          <li data-animate><strong>Konsultacje ICP (Ideal Customer Profile)</strong> – rozwój kompetencji zespołu.</li>
+          <li data-animate><strong>Audyt sprzedażowy</strong> – analiza i strategia Twojej marki.</li>
         </ul>
       </div>
       <Footer />

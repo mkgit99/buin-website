@@ -11,10 +11,14 @@ export default function Contact() {
   return (
     <div className="contact-page-static">
       <div className="contact-card" data-animate>
-        <h1 className="contact-heading">Masz pytania?</h1>
-        <p className="contact-subtext">Skontaktuj się bezpośrednio przez email:</p>
+        <h1 className="contact-heading">Potrzebujesz wsparcia?</h1>
+        <p className="contact-subtext">Skontaktuj się bezpośrednio:</p>
+        <p className="contact-subtext">Krzysztof Pióro</p>
         <a href="mailto:contact@example.com" className="contact-email">
-          contact@example.com
+          E-mail: krzysztof.pioro@buin.pl
+        </a><br></br>
+        <a href="mailto:contact@example.com" className="contact-email">
+          Telefon: +48 507 705 197
         </a>
       </div>
       <Footer />
