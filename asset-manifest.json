@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/buin-website/static/css/main.eb52568d.css",
+    "main.js": "/buin-website/static/js/main.e7698c4b.js",
+    "static/media/logo4xnew.png": "/buin-website/static/media/logo4xnew.712e572b0a5dc53fec70.png",
+    "index.html": "/buin-website/index.html",
+    "main.eb52568d.css.map": "/buin-website/static/css/main.eb52568d.css.map",
+    "main.e7698c4b.js.map": "/buin-website/static/js/main.e7698c4b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb52568d.css",
+    "static/js/main.e7698c4b.js"
+  ]
+}
