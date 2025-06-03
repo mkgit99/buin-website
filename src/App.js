@@ -5,6 +5,7 @@ import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 import About from './pages/About';
 import Articles from './pages/Articles';
+import Attachments from './pages/Attachments';
 import Services from './pages/Services';
 import Navbar from './components/Navbar';
 import './App.css';
@@ -43,6 +44,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/attachments" element={<Attachments />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<Privacy />} />
       </Routes>

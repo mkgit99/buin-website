@@ -1,0 +1,25 @@
+.aboutme-section {
+  background-color: #f0f0f0;
+  padding: 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-direction: row;
+}
+
+.aboutme-text {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .aboutme-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutme-text {
+    margin-top: 1rem;
+  }
+}

@@ -31,7 +31,7 @@
 }
 
 .hero-section {
-  background: linear-gradient(155deg, rgba(179, 22, 53, 1), rgba(49, 43, 106, 1));
+  background: var(--main-gradient);
   background-size: 200% 100%;
   background-repeat: no-repeat;
   animation: gradientSlide 1.5s ease-in-out forwards;
