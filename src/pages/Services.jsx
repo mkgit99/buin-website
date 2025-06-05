@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../components/Footer';
 import CookieBanner from '../components/CookieBanner';
 import Accordion from '@mui/material/Accordion';
@@ -8,27 +8,8 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import '../styles/Page.css';
 import '../styles/animations.css';
-function useInView(threshold = 0.1) {
-  const ref = useRef();
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) setVisible(true);
-      },
-      { threshold }
-    );
-    if (ref.current) observer.observe(ref.current);
-
-    return () => observer.disconnect();
-  }, [threshold]);
-
-  return [ref, visible];
-}
-
+  
 export default function Services() {
-  const [ref, visible] = useInView();
 
   useEffect(() => {
     window.scrollTo(0, 0);

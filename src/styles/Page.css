@@ -5,7 +5,7 @@
 }
 
 .page {
-  max-width: 1000px;
+  max-width: 62.5rem;
   margin: 2rem auto;
   padding: 2rem;
 
@@ -23,8 +23,8 @@
 .animated-title::after {
   content: '';
   display: block;
-  width: 80px;
-  height: 3px;
+  width: 5rem;
+  height: 0.188rem;
   background: var(--main-gradient);
   margin-top: 0.5rem;
   animation: growLine 1s ease forwards;
@@ -36,7 +36,7 @@
     opacity: 0;
   }
   to {
-    width: 80px;
+    width: 5rem;
     opacity: 1;
   }
 }
@@ -55,17 +55,6 @@ blockquote {
   color: #555;
 }
 
-.image-section {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.about-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
 .card-grid {
   display: grid;
   gap: 2rem;
@@ -76,7 +65,7 @@ blockquote {
 .card {
   background: #fafafa;
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -109,8 +98,8 @@ blockquote {
 
 .circle-photo {
   border-radius: 50%;
-  /* width: 50%; lub np. max-width: 300px */
-  max-width: 300px;
+  /* max-width: 300px; */
+  max-width: 18.75rem;
   height: auto;
   display: block;
   object-fit: cover;

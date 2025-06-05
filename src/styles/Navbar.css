@@ -21,7 +21,7 @@
 }
 
 .navbar-logo img {
-  height: 60px;
+  height: 3.75rem;
   z-index: 1201;
 }
 
@@ -50,7 +50,7 @@
   position: relative;
   display: inline-block;
   text-decoration: none;
-  padding-bottom: 4px;
+  padding-bottom: 0.25rem;
   color: inherit;
 }
 
@@ -60,7 +60,7 @@
   bottom: 0;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 0.125rem;
   background: var(--main-gradient);
   transition: width 0.3s ease-in-out;
 }
@@ -130,7 +130,7 @@
   }
 
   .mobile-logo-img {
-    height: 90px;
+    height: 5.625rem;
     width: auto;
     max-width: 80%;
   }

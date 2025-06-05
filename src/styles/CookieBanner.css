@@ -24,7 +24,7 @@
   padding: 0.5rem 1rem;
   margin-left: 0.5rem;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   font-weight: 600;
   transition: background 0.2s ease;
 }

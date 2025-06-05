@@ -1,7 +1,7 @@
 .aboutme-section {
   background-color: #f0f0f0;
   padding: 0;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   display: flex;
   align-items: center;
   gap: 2rem;
