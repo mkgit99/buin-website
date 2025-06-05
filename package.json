@@ -2,7 +2,7 @@
   "name": "buin-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mkgit99.github.io/buin-website",
+  "homepage": "https://buin.pl",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",

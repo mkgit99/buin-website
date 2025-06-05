@@ -8,5 +8,21 @@ html, body, #root {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
-  color: #170050;
+  color: var(--main-font-color);
+}
+
+:root {
+  --main-gradient: linear-gradient(155deg, rgba(179, 22, 53, 1), rgba(49, 43, 106, 1));
+  --main-font-color: #0f0034;
+  --grey-background: #f0f0f0;
+}
+
+.yellowtail {
+  font-family: "Yellowtail", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.yellowtail.desktop {
+  margin-left: 0.625rem;
 }
