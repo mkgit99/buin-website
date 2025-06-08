@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.652de629.css",
-    "main.js": "/static/js/main.72b67744.js",
+    "main.css": "/static/css/main.cf82e675.css",
+    "main.js": "/static/js/main.df76cca7.js",
     "static/media/kpioro_circular_4000px.png": "/static/media/kpioro_circular_4000px.b12f2fdc698502a6e818.png",
     "static/media/kpioro_circular_2000px.png": "/static/media/kpioro_circular_2000px.43a1dccced065bbc63cb.png",
     "static/media/kpioro_circular_1000px.png": "/static/media/kpioro_circular_1000px.59e9359d33a637fcb40b.png",
     "static/media/logo4x.png": "/static/media/logo4x.712e572b0a5dc53fec70.png",
     "static/media/kpioro_circular_500px.png": "/static/media/kpioro_circular_500px.d4118a5c723ace0d4c92.png",
+    "static/media/space.jpg": "/static/media/space.17d4e822ac9387a96364.jpg",
+    "static/media/climate.jpeg": "/static/media/climate.1913821b04f9972e4920.jpeg",
     "static/media/xing.svg": "/static/media/xing.80d135b09709f140dfdddaebbf41415d.svg",
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.c6e8f144f81ee9a16222f8a411dcca7e.svg",
-    "main.652de629.css.map": "/static/css/main.652de629.css.map",
-    "main.72b67744.js.map": "/static/js/main.72b67744.js.map"
+    "main.cf82e675.css.map": "/static/css/main.cf82e675.css.map",
+    "main.df76cca7.js.map": "/static/js/main.df76cca7.js.map"
   },
   "entrypoints": [
-    "static/css/main.652de629.css",
-    "static/js/main.72b67744.js"
+    "static/css/main.cf82e675.css",
+    "static/js/main.df76cca7.js"
   ]
 }
