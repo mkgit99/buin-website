@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './CookieBanner.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./CookieBanner.css";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('cookies');
+    const consent = localStorage.getItem("cookies");
     if (!consent) setVisible(true);
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem('cookies', 'accepted');
+    localStorage.setItem("cookies", "accepted");
     setVisible(false);
   };
 
   const handleDecline = () => {
-    localStorage.setItem('cookies', 'declined');
+    localStorage.setItem("cookies", "declined");
     setVisible(false);
   };
 
@@ -25,7 +25,8 @@ export default function CookieBanner() {
   return (
     <div className="cookie-banner">
       <p>
-        Ta strona internetowa używa plików cookie do analizy ruchu. Kontynuując korzystanie z witryny, akceptujesz naszą politykę prywatności.{' '}
+        Ta strona internetowa używa plików cookie do analizy ruchu. Kontynuując
+        korzystanie z witryny, akceptujesz naszą politykę prywatności.{" "}
         <Link to="/privacy">Dowiedz się więcej w Polityce cookies</Link>.
       </p>
       <div className="cookie-buttons">

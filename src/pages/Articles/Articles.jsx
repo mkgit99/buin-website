@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
-import Footer from '../../components/Footer/Footer';
-import CookieBanner from '../../components/CookieBanner/CookieBanner';
-import ArticleGrid from '../../components/ArticleGrid/ArticleGrid';
+import React, { useEffect } from "react";
+import Footer from "../../components/Footer/Footer";
+import CookieBanner from "../../components/CookieBanner/CookieBanner";
+import ArticleGrid from "../../components/ArticleGrid/ArticleGrid";
 
-import '../../styles/Page.css';
+import "../../styles/Page.css";
 
 export default function Articles() {
   useEffect(() => {
@@ -11,7 +11,7 @@ export default function Articles() {
   }, []);
 
   return (
-    <div className='page-container'>
+    <div className="page-container">
       <div className="page">
         <h1 className="animated-title">Artykuły</h1>
         <ArticleGrid />

@@ -1,16 +1,19 @@
-import React, { useEffect } from 'react';
-import Footer from '../../components/Footer/Footer';
-import CookieBanner from '../../components/CookieBanner/CookieBanner';
-import photo500 from '../../assets/kpioro_circular_500px.png';
-import photo1000 from '../../assets/kpioro_circular_1000px.png';
-import photo2000 from '../../assets/kpioro_circular_2000px.png';
-import photo4000 from '../../assets/kpioro_circular_4000px.png';
-import aboutText from '../../data/about';
+import React, { useEffect } from "react";
+import Footer from "../../components/Footer/Footer";
+import CookieBanner from "../../components/CookieBanner/CookieBanner";
+import photo500 from "../../assets/kpioro_circular_500px.png";
+import photo1000 from "../../assets/kpioro_circular_1000px.png";
+import photo2000 from "../../assets/kpioro_circular_2000px.png";
+import photo4000 from "../../assets/kpioro_circular_4000px.png";
+import aboutText from "../../data/about";
+import linkedin from "../../assets/linkedin.svg";
+import xing from "../../assets/xing.svg";
+import { LINKEDIN_URL, XING_URL } from "../../constants";
 
-import '../../styles/Page.css';
-import './About.css';
+import "../../styles/Page.css";
+import "./About.css";
 
-const paragraphs = aboutText.split('\n\n');
+const paragraphs = aboutText.split("\n\n");
 
 export default function About() {
   useEffect(() => {
@@ -18,11 +21,11 @@ export default function About() {
   }, []);
 
   return (
-    <div className='page-container'>
+    <div className="page-container">
       <div className="page">
         <h1 className="animated-title">O mnie</h1>
-        <div className='aboutme-section' data-animate>
-          <div className='aboutme-photo-col'>
+        <div className="aboutme-section" data-animate>
+          <div className="aboutme-photo-col">
             <img
               src={photo1000}
               srcSet={`
@@ -37,14 +40,24 @@ export default function About() {
               alt="Krzysztof Pióro"
               className="circle-photo"
             />
-            <p className='aboutme-name'>Krzysztof Pióro</p>
-            <p className='aboutme-role'>Lead Generation & Sales Expert</p>
+            <p className="aboutme-name">Krzysztof Pióro</p>
+            <p className="aboutme-role">Lead Generation & Sales Expert</p>
+            <div className="aboutme-socials">
+              <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
+                <img src={linkedin} alt="LinkedIn" />
+              </a>
+              <a href={XING_URL} target="_blank" rel="noopener noreferrer">
+                <img src={xing} alt="Xing" />
+              </a>
+            </div>
           </div>
 
-          <div className='aboutme-text'>
-            <div className='aboutme-accent' />
+          <div className="aboutme-text">
+            <div className="aboutme-accent" />
             {paragraphs.map((para, i) => (
-              <p key={i} className='aboutme-para'>{para}</p>
+              <p key={i} className="aboutme-para">
+                {para}
+              </p>
             ))}
           </div>
         </div>

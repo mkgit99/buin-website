@@ -55,7 +55,7 @@
 }
 
 .navbar-menu li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -120,7 +120,9 @@
     justify-content: center;
     opacity: 0;
     transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
     margin-top: 2rem;
   }
 
@@ -136,20 +138,18 @@
   }
 
   .yellowtail.desktop {
-    display: none
+    display: none;
   }
 
   .yellowtail.mobile {
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
-
   }
 
   .links-mobile {
     display: flex;
-    gap: '8px';
+    gap: "8px";
     margin-left: 1.7rem;
   }
-
 }

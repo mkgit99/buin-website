@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
-import './Home.css';
-import Footer from '../../components/Footer/Footer';
-import CookieBanner from '../../components/CookieBanner/CookieBanner';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from "react";
+import "./Home.css";
+import Footer from "../../components/Footer/Footer";
+import CookieBanner from "../../components/CookieBanner/CookieBanner";
+import homeContent from "../../data/home";
+import { useNavigate } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 
 export default function Home() {
   useEffect(() => {
@@ -11,36 +13,29 @@ export default function Home() {
 
   const navigate = useNavigate();
 
-  const handleGoToServices = () => {
-    navigate('/services');
-  };
-
   return (
     <div className="home-page-container">
       <div className="home-page-content">
         <header className="hero-section">
           <h1 className="hero-heading">Passion for Lead Generation</h1>
-          <p className="hero-subtext">Robie to to i to i tamto</p>
-          <button className="hero-button" onClick={handleGoToServices}>Sprawdź moje kursy</button>
+          <button className="hero-button" onClick={() => navigate("/services")}>
+            Sprawdź usługi
+          </button>
         </header>
 
-        <section className="about-section" data-animate>
-          <h2>About Me</h2>
-          <p>
-            Passionate designer with experience in creating user-centered digital products. I focus on
-            functionality, aesthetics, and innovation to deliver impactful design solutions.
-          </p>
-        </section>
-
-        <section className="projects-section" data-animate>
-          <h2>Featured Projects</h2>
-          <div className="project-grid">
-            {["Project One", "Project Two", "Project Three"].map((project, i) => (
-              <div className="project-card" key={i}>
-                <h3>{project}</h3>
-                <p>Description of {project.toLowerCase()}.</p>
-              </div>
-            ))}
+        <section className="program-section">
+          <div className="program-inner">
+            <div className="program-header" data-animate>
+              <div className="program-accent" />
+              <h2 className="program-title">{homeContent.sectionTitle}</h2>
+            </div>
+            <div className="program-cards">
+              {homeContent.paragraphs.map((para, i) => (
+                <div className="program-card" data-animate key={i}>
+                  <ReactMarkdown>{para}</ReactMarkdown>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       </div>

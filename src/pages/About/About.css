@@ -30,6 +30,29 @@
   letter-spacing: 0.04em;
 }
 
+.aboutme-socials {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.aboutme-socials a {
+  opacity: 0.75;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.aboutme-socials a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.aboutme-socials img {
+  width: 2rem;
+  height: 2rem;
+}
+
 .aboutme-text {
   flex: 1;
   padding-top: 0.25rem;

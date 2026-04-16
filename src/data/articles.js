@@ -1,12 +1,12 @@
-import networkingImage from '../assets/networking.jpg';
-import climateImage from '../assets/climate.jpeg';
-import spaceImage from '../assets/space.jpg';
+import networkingImage from "../assets/networking.jpg";
+import climateImage from "../assets/climate.jpeg";
+import spaceImage from "../assets/space.jpg";
 
 const articles = [
-	{
-	  id: 1,
-	  title: "The Art Of Networking",
-	  full: `
+  {
+    id: 1,
+    title: "The Art Of Networking",
+    full: `
 There has yet to be invented a better way to reach potential customers and build business relationships than by taking part in various types of events, conferences and forums, i.e. through networking.
 
 In a world of dynamic changes, globalisation, technological advancement and information overload, you need to be aware that time is one of the most valuable assets at our disposal.
@@ -42,13 +42,13 @@ Networking is an invaluably useful tool for generating leads which, if taken car
 
 #networking #outbound
     `.trim(),
-	  image: "gradient",
-	},
-	{
-	  id: 2,
-	  title: "Czym jest program Lead Generation?",
-	  image: "gradient",
-	  full: `
+    image: "gradient",
+  },
+  {
+    id: 2,
+    title: "Czym jest program Lead Generation?",
+    image: "gradient",
+    full: `
 Przez blisko dwie dekady pracy w obszarze sprzedaży miałem możliwość obserwowania funkcjonowania wielu zespołów handlowych oraz analizowania czynników, które decydują o realizacji – bądź braku realizacji – ambitnych planów sprzedażowych. Jedna z najważniejszych konkluzji, jaka płynie z tych doświadczeń, jest zaskakująco prosta: brak wyników sprzedażowych bardzo rzadko wynika wyłącznie z niedostatecznych kompetencji, doświadczenia czy wiedzy handlowca.
 
 W zdecydowanej większości przypadków problem leży znacznie głębiej – w braku jasno zdefiniowanego, ustandaryzowanego i konsekwentnie realizowanego **procesu sprzedażowego**, a w szczególności procesu **systematycznego generowania leadów**.
@@ -77,8 +77,7 @@ Połączenie właściwego nastawienia mentalnego, praktycznych kompetencji sprze
 
 W efekcie organizacje nie tylko zwiększają liczbę nowych szans sprzedażowych, lecz przede wszystkim budują **przewidywalny i skalowalny mechanizm wzrostu przychodów**, który wzmacnia stabilność i konkurencyjność firmy w długiej perspektywie.
     `.trim(),
-	},
-	
-  ];
+  },
+];
 
-  export default articles;
+export default articles;

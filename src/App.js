@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    useLocation,
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
 } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
@@ -21,74 +21,74 @@ import "./App.css";
 import "./styles/animations.css";
 
 function Analytics() {
-    const location = useLocation();
+  const location = useLocation();
 
-    useEffect(() => {
-        if (window.gtag) {
-            window.gtag('event', 'page_view', {
-                page_path: location.pathname,
-            });
-        }
-    }, [location.pathname]);
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag("event", "page_view", {
+        page_path: location.pathname,
+      });
+    }
+  }, [location.pathname]);
 
-    return null;
+  return null;
 }
 
 function ScrollRevealHandler() {
-    const location = useLocation();
+  const location = useLocation();
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            { threshold: 0.08 }
-        );
-
-        const elements = document.querySelectorAll("[data-animate]");
-        elements.forEach((el) => {
-            el.classList.remove("visible");
-            observer.observe(el);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
         });
+      },
+      { threshold: 0.08 },
+    );
 
-        return () => observer.disconnect();
-    }, [location.pathname]);
+    const elements = document.querySelectorAll("[data-animate]");
+    elements.forEach((el) => {
+      el.classList.remove("visible");
+      observer.observe(el);
+    });
 
-    return null;
+    return () => observer.disconnect();
+  }, [location.pathname]);
+
+  return null;
 }
 
 export default function App() {
-    useEffect(() => {
-        const img = new Image();
-        img.srcset = `
+  useEffect(() => {
+    const img = new Image();
+    img.srcset = `
 			${photo500} 500w,
 			${photo1000} 1000w,
 			${photo2000} 2000w,
 			${photo4000} 4000w
 		`;
-        img.sizes = "100vw";
-        img.src = photo1000;
-    }, []);
+    img.sizes = "100vw";
+    img.src = photo1000;
+  }, []);
 
-    return (
-        <Router>
-            <Analytics />
-            <ScrollRevealHandler />
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/articles" element={<Articles />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/attachments" element={<Attachments />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/privacy" element={<Privacy />} />
-            </Routes>
-        </Router>
-    );
+  return (
+    <Router>
+      <Analytics />
+      <ScrollRevealHandler />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/articles" element={<Articles />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/attachments" element={<Attachments />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
+      </Routes>
+    </Router>
+  );
 }

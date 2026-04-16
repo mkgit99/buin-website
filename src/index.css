@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #fff;
   color: var(--main-font-color);
 }
@@ -9,7 +9,12 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: 600;
 }
@@ -27,11 +32,11 @@ button {
 }
 
 html {
-	font-size: 100%; /* = 16px */
+  font-size: 100%; /* = 16px */
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 150%; /* = 24px */
   }
-  
-  @media (min-width: 2560px) {
-	html {
-	  font-size: 150%; /* = 24px */
-	}
-  }
+}
