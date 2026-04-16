@@ -1,25 +1,68 @@
 .aboutme-section {
-  background-color: #f0f0f0;
-  padding: 0;
-  border-radius: 1.25rem;
   display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 2.5rem;
+  background: #f7f7f8;
+  border-radius: 1.5rem;
+}
+
+.aboutme-photo-col {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem;
-  flex-direction: row;
+  flex-shrink: 0;
+  gap: 0.5rem;
+}
+
+.aboutme-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--main-font-color);
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.aboutme-role {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: center;
+  letter-spacing: 0.04em;
 }
 
 .aboutme-text {
   flex: 1;
+  padding-top: 0.25rem;
+}
+
+.aboutme-accent {
+  width: 3rem;
+  height: 3px;
+  background: var(--main-gradient);
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.aboutme-para {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--main-font-color);
+  margin-bottom: 1.25rem;
+}
+
+.aboutme-para:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
   .aboutme-section {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
   }
 
   .aboutme-text {
-    margin-top: 1rem;
+    text-align: left;
   }
 }
