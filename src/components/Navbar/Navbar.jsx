@@ -2,18 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
-import '../styles/Navbar.css';
-import logo from '../assets/logo4x.png';
-import xing from '../assets/xing.svg';
-import linkedin from '../assets/linkedin.svg';
-import { LINKEDIN_URL, XING_URL } from '../constants/constants';
+import './Navbar.css';
+import logo from '../../assets/logo4x.png';
+import xing from '../../assets/xing.svg';
+import linkedin from '../../assets/linkedin.svg';
+import { LINKEDIN_URL, XING_URL } from '../../constants';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    // Close menu on route change
     setMenuOpen(false);
   }, [location.pathname]);
 

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import Footer from '../components/Footer';
-import CookieBanner from '../components/CookieBanner';
-import ArticleGrid from '../components/ArticleGrid';
+import Footer from '../../components/Footer/Footer';
+import CookieBanner from '../../components/CookieBanner/CookieBanner';
+import ArticleGrid from '../../components/ArticleGrid/ArticleGrid';
 
-import '../styles/Page.css';
+import '../../styles/Page.css';
 
 export default function Articles() {
   useEffect(() => {

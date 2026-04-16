@@ -27,16 +27,17 @@
   height: 0.188rem;
   background: var(--main-gradient);
   margin-top: 0.5rem;
-  animation: growLine 1s ease forwards;
+  transform-origin: left;
+  animation: growLine 0.7s ease forwards;
 }
 
 @keyframes growLine {
   from {
-    width: 0;
+    transform: scaleX(0);
     opacity: 0;
   }
   to {
-    width: 5rem;
+    transform: scaleX(1);
     opacity: 1;
   }
 }
@@ -85,16 +86,6 @@ blockquote {
   padding: 0;
 }
 
-[data-animate] {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease-out;
-}
-
-[data-animate].visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .circle-photo {
   border-radius: 50%;

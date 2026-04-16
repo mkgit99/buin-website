@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/CookieBanner.css';
+import './CookieBanner.css';
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
@@ -25,8 +25,8 @@ export default function CookieBanner() {
   return (
     <div className="cookie-banner">
       <p>
-      Ta strona internetowa używa plików cookie do analizy ruchu. Kontynuując korzystanie z witryny, akceptujesz naszą politykę prywatności.{' '}
-       <Link to="/privacy">Dowiedz się więcej w Polityce cookies</Link>.
+        Ta strona internetowa używa plików cookie do analizy ruchu. Kontynuując korzystanie z witryny, akceptujesz naszą politykę prywatności.{' '}
+        <Link to="/privacy">Dowiedz się więcej w Polityce cookies</Link>.
       </p>
       <div className="cookie-buttons">
         <button onClick={handleDecline}>Odrzuć</button>

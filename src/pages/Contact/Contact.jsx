@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
-import Footer from '../components/Footer';
-import CookieBanner from '../components/CookieBanner';
-import '../styles/Contact.css';
-import '../styles/Page.css';
-import { CONTACT_PHONE, CONTACT_EMAIL } from '../constants/constants';
+import Footer from '../../components/Footer/Footer';
+import CookieBanner from '../../components/CookieBanner/CookieBanner';
+import '../../styles/Page.css';
+import './Contact.css';
+import { CONTACT_PHONE, CONTACT_EMAIL } from '../../constants';
 
 export default function Contact() {
   useEffect(() => {

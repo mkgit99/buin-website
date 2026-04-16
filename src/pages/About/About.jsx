@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
-import Footer from '../components/Footer';
-import CookieBanner from '../components/CookieBanner';
-import photo500 from '../assets/kpioro_circular_500px.png';
-import photo1000 from '../assets/kpioro_circular_1000px.png';
-import photo2000 from '../assets/kpioro_circular_2000px.png';
-import photo4000 from '../assets/kpioro_circular_4000px.png';
-import aboutText from '../data/about';
+import Footer from '../../components/Footer/Footer';
+import CookieBanner from '../../components/CookieBanner/CookieBanner';
+import photo500 from '../../assets/kpioro_circular_500px.png';
+import photo1000 from '../../assets/kpioro_circular_1000px.png';
+import photo2000 from '../../assets/kpioro_circular_2000px.png';
+import photo4000 from '../../assets/kpioro_circular_4000px.png';
+import aboutText from '../../data/about';
 
-import '../styles/Page.css';
-import '../styles/About.css';
+import '../../styles/Page.css';
+import './About.css';
 
 const paragraphs = aboutText.split('\n\n');
 

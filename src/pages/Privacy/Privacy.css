@@ -1,5 +1,4 @@
 .privacy-page {
-    background-color: white;
     min-height: calc(100vh - 97px);
     display: flex;
     flex-direction: column;

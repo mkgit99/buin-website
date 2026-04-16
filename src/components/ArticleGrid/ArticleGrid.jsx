@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
 import { motion, AnimatePresence } from "framer-motion";
 import ArticleCard from "./ArticleCard";
-import articlesData from "../data/articles";
-import "../styles/ArticleGrid.css";
+import articlesData from "../../data/articles";
+import "./ArticleGrid.css";
 
 const ArticleGrid = () => {
     const [expandedId, setExpandedId] = useState(null);

@@ -10,7 +10,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ReactMarkdown from "react-markdown";
-import "../styles/ArticleGrid.css";
+import "./ArticleGrid.css";
 
 const ArticleCard = ({ article, isExpanded, onToggle }) => {
     const cardRef = useRef(null);
@@ -57,7 +57,7 @@ const ArticleCard = ({ article, isExpanded, onToggle }) => {
                             size="medium"
                             sx={{ textTransform: "none" }}
                         >
-                            {isExpanded ? "Zwiń" : "Czytaj"}
+                            {isExpanded ? "Collapse" : "Read more"}
                         </Button>
                     </Stack>
                 </CardContent>

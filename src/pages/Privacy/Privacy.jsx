@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import Footer from '../components/Footer';
-import CookieBanner from '../components/CookieBanner';
-import '../styles/Privacy.css';
+import Footer from '../../components/Footer/Footer';
+import CookieBanner from '../../components/CookieBanner/CookieBanner';
+import './Privacy.css';
 
 export default function Privacy() {
   useEffect(() => {

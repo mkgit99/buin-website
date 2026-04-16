@@ -2,19 +2,54 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff;
-  color: var(--main-font-color);
-}
-
 :root {
   --main-gradient: linear-gradient(155deg, rgba(179, 22, 53, 1), rgba(49, 43, 106, 1));
   --main-font-color: #0f0034;
   --grey-background: #f0f0f0;
+}
+
+html {
+  height: 100%;
+  background-color: #fff;
+}
+
+body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  color: var(--main-font-color);
+}
+
+@media (min-width: 1000px) {
+  body::before {
+    content: '';
+    position: fixed;
+    top: -30vh;
+    left: -22vw;
+    width: 58vw;
+    height: 80vh;
+    border-radius: 50%;
+    background: var(--main-gradient);
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    bottom: -30vh;
+    right: -22vw;
+    width: 52vw;
+    height: 72vh;
+    border-radius: 50%;
+    background: var(--main-gradient);
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: -1;
+  }
 }
 
 .yellowtail {

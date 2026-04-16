@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import '../styles/Home.css';
-import Footer from '../components/Footer';
-import CookieBanner from '../components/CookieBanner';
+import './Home.css';
+import Footer from '../../components/Footer/Footer';
+import CookieBanner from '../../components/CookieBanner/CookieBanner';
 import { useNavigate } from 'react-router-dom';
 
 export default function Home() {

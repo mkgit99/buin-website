@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import Footer from '../components/Footer';
-import CookieBanner from '../components/CookieBanner';
+import Footer from '../../components/Footer/Footer';
+import CookieBanner from '../../components/CookieBanner/CookieBanner';
 
-import '../styles/Page.css';
+import '../../styles/Page.css';
 
 export default function Attachments() {
   useEffect(() => {
