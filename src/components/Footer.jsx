@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-border"></div>
       <div className="footer-content">
         <Link to="/privacy" className="footer-privacy">Polityka prywatności</Link>
-        <p className="footer-right">© 2025 Krzysztof Pióro. Wszelkie prawa zastrzeżone.</p>
+        <p className="footer-right">© 2026 Krzysztof Pióro. Wszelkie prawa zastrzeżone.</p>
       </div>
     </footer>
   );
