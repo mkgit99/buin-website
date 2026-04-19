@@ -24,8 +24,8 @@ export default function About() {
     <div className="page-container">
       <div className="page">
         <h1 className="animated-title">O mnie</h1>
-        <div className="aboutme-section" data-animate>
-          <div className="aboutme-photo-col">
+        <div className="aboutme-section">
+          <div className="aboutme-photo-col" data-animate>
             <img
               src={photo1000}
               srcSet={`
@@ -55,7 +55,7 @@ export default function About() {
           <div className="aboutme-text">
             <div className="aboutme-accent" />
             {paragraphs.map((para, i) => (
-              <p key={i} className="aboutme-para">
+              <p key={i} className="aboutme-para" data-animate>
                 {para}
               </p>
             ))}

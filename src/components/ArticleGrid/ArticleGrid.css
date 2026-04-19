@@ -108,6 +108,12 @@
   transition: grid-template-rows 0.45s ease;
 }
 
+@media (max-width: 600px) {
+  .article-expandable {
+    transition: grid-template-rows 1s ease;
+  }
+}
+
 .article-expandable.expanded {
   grid-template-rows: 1fr;
 }

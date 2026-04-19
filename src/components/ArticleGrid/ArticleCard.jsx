@@ -17,9 +17,25 @@ const ArticleCard = ({ article, isExpanded, onToggle }) => {
 
   useEffect(() => {
     if (isExpanded && cardRef.current) {
+      const mobile = window.matchMedia("(max-width: 600px)").matches;
+      if (!mobile) return;
       setTimeout(() => {
-        cardRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 50);
+        if (!cardRef.current) return;
+        const navbarHeight =
+          parseFloat(
+            getComputedStyle(document.documentElement).getPropertyValue(
+              "--navbar-height"
+            )
+          ) || 64;
+        window.scrollTo({
+          top:
+            window.scrollY +
+            cardRef.current.getBoundingClientRect().top -
+            navbarHeight -
+            16,
+          behavior: "smooth",
+        });
+      }, 1100);
     }
   }, [isExpanded]);
 

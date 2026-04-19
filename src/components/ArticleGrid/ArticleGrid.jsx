@@ -14,7 +14,17 @@ const ArticleGrid = () => {
   const columns = isMobile ? 1 : isTablet ? 2 : 3;
 
   const handleToggle = (id) => {
-    setExpandedId((prev) => (prev === id ? null : id));
+    setExpandedId((prev) => {
+      if (prev === id) return null;
+      if (prev !== null) {
+        const mobile = window.matchMedia("(max-width: 600px)").matches;
+        if (!mobile) {
+          setTimeout(() => setExpandedId(id), 460);
+          return null;
+        }
+      }
+      return id;
+    });
   };
 
   const expandedIndex = expandedId
