@@ -24,8 +24,8 @@ export default function About() {
     <div className="page-container">
       <div className="page">
         <h1 className="animated-title">O mnie</h1>
-        <div className="aboutme-section">
-          <div className="aboutme-photo-col" data-animate>
+        <div className="aboutme-section" data-animate>
+          <div className="aboutme-photo-col">
             <img
               src={photo1000}
               srcSet={`
