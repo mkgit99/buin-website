@@ -1,0 +1,185 @@
+
+
+/* Grid */
+
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.service-wrapper {
+  flex: 0 0 calc(33.333% - 0.667rem);
+}
+
+.service-wrapper:nth-child(1) { transition-delay: 0.05s; }
+.service-wrapper:nth-child(2) { transition-delay: 0.12s; }
+.service-wrapper:nth-child(3) { transition-delay: 0.19s; }
+.service-wrapper:nth-child(4) { transition-delay: 0.26s; }
+.service-wrapper:nth-child(5) { transition-delay: 0.33s; }
+.service-wrapper:nth-child(6) { transition-delay: 0.40s; }
+
+@media (max-width: 900px) {
+  .service-wrapper {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .service-wrapper {
+    flex: 0 0 100%;
+  }
+}
+
+/* Card */
+
+.service-paper {
+  height: 100%;
+  border-radius: 1rem !important;
+  transition: box-shadow 0.3s ease !important;
+}
+
+.service-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem 0.75rem;
+  box-sizing: border-box;
+  color: var(--main-font-color);
+  border-radius: 1rem !important;
+  background-color: var(--grey-background) !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.service-card:hover {
+  background-color: var(--grey-background) !important;
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.service-icon-wrap {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background: var(--main-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon {
+  color: #fff !important;
+  font-size: 1.4rem !important;
+}
+
+.service-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--main-font-color);
+}
+
+.service-preview {
+  font-size: 0.875rem;
+  color: #888;
+  font-style: italic;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 0 0.5rem 0;
+}
+
+.service-actions {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.service-actions .MuiButton-root {
+  font-size: 0.875rem;
+  padding-bottom: 0;
+}
+
+/* Modal */
+
+.service-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.service-modal-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.service-modal-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--main-font-color);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.service-modal-close {
+  flex-shrink: 0;
+  color: #999 !important;
+  transition: color 0.2s ease, transform 0.2s ease !important;
+}
+
+.service-modal-close:hover {
+  color: var(--main-font-color) !important;
+  transform: rotate(90deg);
+}
+
+.service-modal-body {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--main-font-color);
+}
+
+.service-modal-body p {
+  margin: 0 0 0.85rem 0;
+}
+
+.service-modal-body ul {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0 0.85rem 0;
+}
+
+.service-modal-body li {
+  margin-bottom: 0.4rem;
+}
+
+.service-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 600px) {
+  .service-modal {
+    padding: 1.25rem;
+    max-height: 90vh;
+    border-radius: 1rem;
+  }
+
+  .service-modal-title {
+    font-size: 1rem;
+  }
+}

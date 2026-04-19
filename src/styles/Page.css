@@ -100,3 +100,27 @@ blockquote {
 .accordion {
   color: var(--main-font-color);
 }
+
+.expand-btn {
+  background: white;
+  color: var(--main-font-color);
+  border: none;
+  padding: 0.55rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  border-radius: 3rem;
+  cursor: pointer;
+  box-shadow: none;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.expand-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
+}
+
+.expand-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}

@@ -1,11 +1,17 @@
-import networkingImage from "../assets/networking.jpg";
-import climateImage from "../assets/climate.jpeg";
-import spaceImage from "../assets/space.jpg";
+import handshakeSmall from "../assets/handshake-small.jpg";
+import handshakeMedium from "../assets/handshake-medium.jpg";
+import meetingSmall from "../assets/meeting-small.jpg";
+import meetingMedium from "../assets/meeting-medium.jpg";
+
 
 const articles = [
   {
     id: 1,
     title: "The Art Of Networking",
+    cardImage: handshakeSmall,
+    modalImageSrc: handshakeSmall,
+    modalImageSrcSet: `${handshakeSmall} 640w, ${handshakeMedium} 1920w`,
+    modalImageSizes: "(max-width: 600px) 100vw, 720px",
     full: `
 There has yet to be invented a better way to reach potential customers and build business relationships than by taking part in various types of events, conferences and forums, i.e. through networking.
 
@@ -42,12 +48,14 @@ Networking is an invaluably useful tool for generating leads which, if taken car
 
 #networking #outbound
     `.trim(),
-    image: "gradient",
   },
   {
     id: 2,
     title: "Czym jest program Lead Generation?",
-    image: "gradient",
+    cardImage: meetingSmall,
+    modalImageSrc: meetingSmall,
+    modalImageSrcSet: `${meetingSmall} 640w, ${meetingMedium} 1920w`,
+    modalImageSizes: "(max-width: 600px) 100vw, 720px",
     full: `
 Przez blisko dwie dekady pracy w obszarze sprzedaży miałem możliwość obserwowania funkcjonowania wielu zespołów handlowych oraz analizowania czynników, które decydują o realizacji – bądź braku realizacji – ambitnych planów sprzedażowych. Jedna z najważniejszych konkluzji, jaka płynie z tych doświadczeń, jest zaskakująco prosta: brak wyników sprzedażowych bardzo rzadko wynika wyłącznie z niedostatecznych kompetencji, doświadczenia czy wiedzy handlowca.
 

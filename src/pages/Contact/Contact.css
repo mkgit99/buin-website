@@ -110,6 +110,8 @@
 .contact-detail-value {
   font-size: 1rem;
   font-weight: 600;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 @media (max-width: 700px) {

@@ -1,83 +1,31 @@
-import React, { useRef, useEffect } from "react";
-import {
-  Card,
-  CardContent,
-  Typography,
-  Paper,
-  Button,
-  Stack,
-} from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import ReactMarkdown from "react-markdown";
+import React from "react";
+import { Card, CardContent, Typography, Paper } from "@mui/material";
+import "../../styles/Page.css";
 import "./ArticleGrid.css";
 
-const ArticleCard = ({ article, isExpanded, onToggle }) => {
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    if (isExpanded && cardRef.current) {
-      const mobile = window.matchMedia("(max-width: 600px)").matches;
-      if (!mobile) return;
-      setTimeout(() => {
-        if (!cardRef.current) return;
-        const navbarHeight =
-          parseFloat(
-            getComputedStyle(document.documentElement).getPropertyValue(
-              "--navbar-height"
-            )
-          ) || 64;
-        window.scrollTo({
-          top:
-            window.scrollY +
-            cardRef.current.getBoundingClientRect().top -
-            navbarHeight -
-            16,
-          behavior: "smooth",
-        });
-      }, 1100);
-    }
-  }, [isExpanded]);
+const ArticleCard = ({ article, onOpen }) => {
+  const preview = article.full.split("\n\n")[0].replace(/\*\*/g, "");
 
   return (
-    <Paper elevation={3} className="article-paper" ref={cardRef}>
+    <Paper elevation={0} className="article-paper">
       <Card className="article-card">
-        {article.image === "gradient" ? (
-          <div className="article-img article-img-gradient" />
-        ) : article.image && article.image !== "null" ? (
+        {article.cardImage ? (
           <img
-            src={article.image}
+            src={article.cardImage}
             alt={article.title}
             className="article-img"
           />
         ) : null}
         <CardContent className="article-content">
           <Typography variant="h6">{article.title}</Typography>
-
-          {!isExpanded && (
-            <Typography variant="body2" className="article-preview">
-              {article.full}
-            </Typography>
-          )}
-
-          <div className={`article-expandable ${isExpanded ? "expanded" : ""}`}>
-            <div>
-              <div className="article-full">
-                <ReactMarkdown>{article.full}</ReactMarkdown>
-              </div>
-            </div>
+          <Typography variant="body2" className="article-preview">
+            {preview}
+          </Typography>
+          <div className="article-actions">
+            <button className="expand-btn" onClick={() => onOpen(article.id)}>
+              Rozwiń
+            </button>
           </div>
-
-          <Stack direction="row" justifyContent="flex-end" mt={2}>
-            <Button
-              onClick={() => onToggle(article.id)}
-              endIcon={isExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-              size="medium"
-              sx={{ textTransform: "none" }}
-            >
-              {isExpanded ? "Collapse" : "Read more"}
-            </Button>
-          </Stack>
         </CardContent>
       </Card>
     </Paper>

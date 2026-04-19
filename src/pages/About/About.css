@@ -3,7 +3,7 @@
   align-items: flex-start;
   gap: 3rem;
   padding: 2.5rem;
-  background: #f7f7f8;
+  background: var(--grey-background);
   border-radius: 1.5rem;
 }
 
