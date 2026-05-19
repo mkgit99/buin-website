@@ -17,6 +17,10 @@ import photo500 from "./assets/kpioro_circular_500px.png";
 import photo1000 from "./assets/kpioro_circular_1000px.png";
 import photo2000 from "./assets/kpioro_circular_2000px.png";
 import photo4000 from "./assets/kpioro_circular_4000px.png";
+import handshakeSmall from "./assets/handshake-small.jpg";
+import handshakeMedium from "./assets/handshake-medium.jpg";
+import meetingSmall from "./assets/meeting-small.jpg";
+import meetingMedium from "./assets/meeting-medium.jpg";
 import "./App.css";
 import "./styles/animations.css";
 
@@ -64,15 +68,17 @@ function ScrollRevealHandler() {
 
 export default function App() {
   useEffect(() => {
-    const img = new Image();
-    img.srcset = `
-			${photo500} 500w,
-			${photo1000} 1000w,
-			${photo2000} 2000w,
-			${photo4000} 4000w
-		`;
-    img.sizes = "100vw";
-    img.src = photo1000;
+    const profileImg = new Image();
+    profileImg.srcset = `${photo500} 500w, ${photo1000} 1000w, ${photo2000} 2000w, ${photo4000} 4000w`;
+    profileImg.sizes = "100vw";
+    profileImg.src = photo1000;
+
+    [handshakeSmall, handshakeMedium, meetingSmall, meetingMedium].forEach(
+      (src) => {
+        const i = new Image();
+        i.src = src;
+      },
+    );
   }, []);
 
   return (
