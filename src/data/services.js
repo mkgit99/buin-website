@@ -63,10 +63,10 @@ Na tej podstawie identyfikowany jest najbardziej wartościowy segment odbiorców
   },
   {
     id: 4,
-    title: "Konsultacje w obszarze klasyfikacji leadów (Lead Sourcing)",
+    title: "Konsultacje dotyczące klasyfikacji leadów (Lead Sourcing)",
     image: "",
     full: `
- To strategiczne działania ukierunkowane na podniesienie jakości procesu sprzedażowego poprzez precyzyjną selekcję potencjalnych klientów już na wczesnym etapie lejka. Ich celem jest skuteczna eliminacja leadów o niskiej wartości biznesowej oraz ograniczonej gotowości zakupowej, co pozwala skoncentrować zasoby organizacji wyłącznie na najbardziej perspektywicznych prospektach.
+ To strategiczne działania ukierunkowane na zwiększenie efektywności sprzedaży dzięki dokładniejszej selekcji potencjalnych klientów na wczesnym etapie procesu. Ich celem jest skuteczna eliminacja leadów o niskiej wartości biznesowej oraz ograniczonej gotowości zakupowej, co pozwala skoncentrować zasoby organizacji wyłącznie na najbardziej perspektywicznych prospektach.
 
 Dzięki wdrożeniu zaawansowanych kryteriów kwalifikacyjnych, analizy danych oraz dopasowanych modeli scoringowych, przedsiębiorstwo zyskuje pełną kontrolę nad jakością napływających kontaktów. Proces ten nie tylko zwiększa efektywność działań handlowych, ale przede wszystkim przekłada się na wymierne oszczędności czasu zespołu sprzedaży, który może skupić się na budowaniu relacji i finalizowaniu transakcji, zamiast angażować się w nisko rokujące interakcje.
 
@@ -75,7 +75,7 @@ W efekcie konsultacje Lead Sourcing stają się kluczowym elementem optymalizacj
   },
   {
     id: 5,
-    title: "Konsultacje lub warsztat z negocjacji",
+    title: "Konsultacje lub warsztaty z negocjacji",
     image: "",
     full: `
  Negocjacje to znacznie więcej niż wymiana argumentów czy dążenie do kompromisu. To sztuka świadomej komunikacji, której fundamentem jest jasno określony cel oraz umiejętność prowadzenia rozmowy w taki sposób, by ten cel został osiągnięty — z korzyścią dla obu stron. W świecie, w którym informacja ma ogromną wartość, a relacje decydują o sukcesie, negocjacje stają się jedną z najpotężniejszych kompetencji współczesnego człowieka.
@@ -95,6 +95,18 @@ W ramach audytu przeprowadzana jest szczegółowa kontrola obecnych aktywności 
 Integralnym elementem audytu jest także ocena planowania budżetowego, efektywności alokacji zasobów, jakości monitoringu wyników oraz skuteczności egzekwowania realizacji celów sprzedażowych. Każdy z tych elementów analizowany jest zarówno indywidualnie, jak i w kontekście całego łańcucha wartości, co pozwala na identyfikację niespójności oraz obszarów wymagających optymalizacji.
 
 Rezultatem audytu sprzedażowego jest precyzyjny, oparty na danych obraz aktualnej kondycji sprzedaży wraz z rekomendacjami działań o najwyższym wpływie biznesowym. To fundament do podejmowania świadomych decyzji strategicznych, zwiększania efektywności operacyjnej oraz budowania trwałej przewagi konkurencyjnej.
+`.trim(),
+  },
+  {
+    id: 7,
+    title: "Wsparcie w rekrutacji",
+    image: "",
+    full: `
+  Usługa dedykowana członkom zarządu, dyrektorom oraz menedżerom odpowiedzialnym za budowę i rozwój zespołów sprzedażowych. Obejmuje eksperckie wsparcie na kluczowych etapach procesu rekrutacyjnego - zarówno na etapie wstępnej selekcji kandydatów, jak i podczas podejmowania finalnych decyzji zatrudnieniowych.
+
+W ramach współpracy przeprowadzana jest pogłębiona analiza kompetencji, doświadczenia zawodowego, wiedzy merytorycznej oraz predyspozycji kandydata. Ocena koncentruje się na identyfikacji potencjału do realizacji celów biznesowych organizacji, dopasowaniu do kultury firmy oraz zdolności do skutecznego funkcjonowania w strukturach sprzedażowych.
+
+Celem usługi jest minimalizacja ryzyka błędnych decyzji rekrutacyjnych oraz zwiększenie skuteczności pozyskiwania talentów.
 `.trim(),
   },
 ];

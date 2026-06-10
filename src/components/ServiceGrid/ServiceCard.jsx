@@ -7,6 +7,7 @@ import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 import FilterAltOutlinedIcon from "@mui/icons-material/FilterAltOutlined";
 import BalanceOutlinedIcon from "@mui/icons-material/BalanceOutlined";
 import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
+import PersonAddOutlinedIcon from "@mui/icons-material/PersonAddOutlined";
 import "./ServiceGrid.css";
 
 const ICONS = {
@@ -16,6 +17,7 @@ const ICONS = {
   4: FilterAltOutlinedIcon,
   5: BalanceOutlinedIcon,
   6: AssessmentOutlinedIcon,
+  7: PersonAddOutlinedIcon,
 };
 
 const ServiceCard = ({ service, onOpen }) => {
