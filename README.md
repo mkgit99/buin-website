@@ -1,1 +1,1 @@
-# Website is available under the [Link](https://buin.pl).
+# Website is available under this [link](https://buin.pl).
